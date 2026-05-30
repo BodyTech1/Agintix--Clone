@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
 }
 
 @font-face{
@@ -41,6 +41,7 @@ nav{
     background-color: #222326f6;
     padding-right: 30px;
     z-index: 1000000000000000000000000000000000000000000000000000;
+    list-style: none;
 
 }
 
@@ -64,6 +65,8 @@ nav .container .links ul{
     justify-content: center;
     flex-direction:row ;
     gap: 28px;
+        list-style: none;
+
 }
 
 nav .container .links ul li{
@@ -217,29 +220,29 @@ nav .container .links ul li:hover .dropdown{
 }
 
 .dropdown .box .d-links a .red{
-    color: rgb(247, 0, 0);
-    background: rgba(255, 5, 5, 0.371);
+    color: rgb(237, 20, 20);
+    background: rgba(183, 0, 0, 0.371);
     padding: 3px 6px;
     border-radius: 7px;
-    transform: scale(0.8);
+    transform: scale(0.75);
 }
 
 .dropdown .box .d-links a .green{
 
-    color: rgb(6, 241, 6);
-    background: rgba(0, 128, 0, 0.371);
+    color: rgb(16, 228, 16);
+    background: rgba(0, 183, 0, 0.371);
     padding: 3px 6px;
     border-radius: 7px;
-    transform: scale(0.8);
+    transform: scale(0.75);
 
 }
 
 .dropdown .box .d-links a .yellow{
-    color: yellow;
-    background: rgba(255, 255, 0, 0.371);
+    color: rgb(226, 226, 22);
+    background: rgba(177, 177, 0, 0.371);
     padding: 3px 6px;
     border-radius: 7px;
-    transform: scale(0.8);
+    transform: scale(0.75);
 
 }
 
@@ -335,7 +338,7 @@ transform: rotate(90deg);}
     transform: scaleY(0);
     opacity: 0;
     visibility: hidden;
-    background:#8f8f8f55;
+    background: #212327;
     border-radius: 10px;
     transition: 0.3s;
     transform-origin: top;
@@ -1059,6 +1062,10 @@ main .latest
     justify-content: space-between;
 }
 
+.unlock{
+    border-bottom:none ;
+}
+
 main .latest .countainer{
     width: 100%;
     display: grid;
@@ -1111,7 +1118,7 @@ main .latest .countainer .card .info p{
 
 main .unlock img:last-child{
     width: 100%;
-    margin-bottom: -60px;
+    margin-bottom: -150px;
 }
 
 main .unlock{
@@ -1124,11 +1131,234 @@ main .unlock{
 
 
 
-.footeri{
-    width: 99vw;
+footer{
+    background-image: url(../img/cr-footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     position: relative;
-    top: -135px;
 }
+
+.s{
+    padding-left: 78px;
+}
+
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 7%;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+footer .container section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+
+footer .container section:first-child{
+    margin-right: 78px;
+}
+
+footer .container section .content:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+footer .container section .content:first-child img{
+    width: 120px;
+}
+
+
+footer .container section .content:first-child span{
+    font-size: 18px;
+}
+
+
+
+footer .container section .content:nth-child(2){
+    margin-bottom: 35px;
+}
+
+footer .container section .content:nth-child(2) .sosial .icons div{ 
+    background-color: #282A2B;
+}
+
+footer .container section .content:nth-child(2) .sosial .icons div:hover{
+    background-color: #fff;
+    color: #325241;
+} 
+
+
+footer .container section .content:last-child{
+    background: #131416;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.12) inset, 0px 0px 2px 2px rgba(0, 0, 0, 0.4);
+
+    padding: 15px;
+    width: 270px;
+    border-radius: 12px;
+    background: var(--tp-common-white);
+    border: 1px solid rgba(33, 33, 45, 0.08);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .container section .content:last-child p{
+    font-size: 44px;
+    margin-right: 10px;
+}
+
+footer .container section .content:last-child .stars{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .container section .content:last-child .stars .star{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+footer .container section .content:last-child .stars a{
+    font-size: 12px;
+    color: #fff;
+    transition: all 0.3s linear;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 1px;
+}
+
+footer .container section .content:last-child .stars a:hover{
+    background-size: 100% 1px;
+}
+
+footer .container section .content:last-child .stars a i{
+    transform: rotate(45deg);
+}
+
+
+
+footer section:not(:first-child) b{
+    margin-bottom: 25px;
+}
+footer section:not(:first-child) ul{
+    list-style:none;
+    padding-left: 8px;
+}
+footer section:not(:first-child) ul li{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 8px;
+}
+
+
+footer section:not(:first-child) ul li::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 50%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: #61616A;
+}
+
+footer section:not(:first-child) ul li a{
+    font-size: 16px;
+    color: #6F7071;
+    transition: 0.3s all linear;
+}
+
+footer section:not(:first-child) ul li a:hover{
+    color: #fff;
+}
+
+
+footer section:not(:first-child) div{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+
+footer section:last-child .f{
+    margin-bottom: 25px;
+}
+
+
+
+
+footer section:not(:first-child) div a{
+    color: #fff;
+    transition: all 0.3s linear;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 1px;
+    width: fit-content;
+}
+
+footer section:not(:first-child) div a:hover{
+    background-size: 100% 1px;
+
+}
+
+
+
+
+.and{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.and span {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.and span span{
+    color: #6F7071;
+    transition: all 0.3s linear;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 1px;
+    width: fit-content;
+    margin: 4px;
+    transform: translateY(-25%);
+}
+
+.and span:hover{
+    background-size: 100% 1px;
+
+}
+
+
+
 
 
 

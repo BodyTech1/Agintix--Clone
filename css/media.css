@@ -11,16 +11,16 @@
 }
 .menu-icon span{
     width: 25px;
-    height: 1.8px;
+    height: 1.5px;
     background-color: #fff;
     transition: all 0.3s;
 }
 .menu-icon span:nth-child(1){
     width: 12px;
-    margin-left: 12px;
+    margin-left: 11px;
 }
 .menu-icon span:nth-child(2){
-    margin-left: 5px;
+    margin-left: 4px;
 }
 .menu-icon span:nth-child(3){
     width: 12px;
@@ -241,16 +241,16 @@ nav>input:checked ~ .mobile-menu{
 }
 
 
-.mobile-menu .sosial{
+.sosial{
     display: flex;
     flex-direction: column;
 }
-.mobile-menu .sosial .icons{
+.sosial .icons{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
-.mobile-menu .sosial .icons div{
+.sosial .icons div{
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-right: 8px;
@@ -259,8 +259,10 @@ nav>input:checked ~ .mobile-menu{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    width: 45px;
+    height: 45px;
 }
-.mobile-menu .sosial .icons div:hover{
+.sosial .icons div:hover{
     color: #000;
     background: #ffffff;
     border:1px #fff solid;
